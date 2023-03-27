@@ -698,10 +698,10 @@ class Upgrader {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Text(message),
+          if (notes != null) notes,
           Padding(
               padding: const EdgeInsets.only(top: 15.0),
               child: Text(messages.message(UpgraderMessage.prompt)!)),
-          if (notes != null) notes,
         ],
       ),
       actions: <Widget>[
